@@ -1,0 +1,16 @@
+.logo{
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+#footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+}
+
+#editarJugador{
+    color: black;
+    text-decoration: none;
+}
