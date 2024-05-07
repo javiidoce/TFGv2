@@ -10,6 +10,10 @@ Características principales:
 - Creación de ejercicios (pizarra digital).
 - Calendario con partidos y entrenamientos.
 
+## Estado del proyecto
+
+Segundo sprint
+
 ## Contacto
 
 Si surge algún problema con la aplicación, me lo puedes comunicar en docejavii@gmail.com.
