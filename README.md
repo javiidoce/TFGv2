@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://github.com/javiidoce/TFGv2" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
 
 ## CoachHub
 
@@ -10,6 +10,9 @@ Características principales:
 - Creación de ejercicios (pizarra digital).
 - Calendario con partidos y entrenamientos.
 
+## Contacto
+
+Si surge algún problema con la aplicación, me lo puedes comunicar en docejavii@gmail.com.
 
 ## Licencia
 
