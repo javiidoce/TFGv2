@@ -64,6 +64,22 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="equipo" class="col-md-4 col-form-label text-md-end">{{ __('Nombre del equipo') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="equipo" type="text" class="form-control" name="equipo" required >
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="categoria" class="col-md-4 col-form-label text-md-end">{{ __('Categoria') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="categoria" type="text" class="form-control" name="categoria" required >
+                            </div>
+                        </div>
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

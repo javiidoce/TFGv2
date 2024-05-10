@@ -1,16 +1,110 @@
-.logo{
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#app {
+    height: 100vh;
+}
+
+#main {
+    position: relative;
+}
+
+.logo {
     width: 70px;
     margin-bottom: 10px;
 }
 
-#footer{
+footer {
     bottom: 0;
-    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    position: fixed;
     width: 100%;
-    height: 60px;
+    height: 30px;
+    background-color: black;
+    color: white;
 }
 
-#editarJugador{
+#editarJugador {
     color: black;
     text-decoration: none;
+}
+
+#pizarra {
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+
+.boton {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #1B4965;
+}
+
+a.navbar-brand {
+    color: whitesmoke;
+}
+
+a.navbar-brand:hover {
+    color: white;
+}
+
+a.link-nav {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a.link-nav:hover {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: white;
+}
+a.nav-link {
+    color: whitesmoke;
+}
+
+a#navbarDropdown {
+    color: white;
+}
+
+div.dropdown-menu {
+    background-color: #1B4965;
+}
+
+a.dropdown-item {
+    color: whitesmoke;
+}
+
+#formaciones{
+    border: 1px solid black;
+}
+
+.convocado::after{
+    content: '  *';
+}
+
+#jugadores{
+    float: left;
+}
+#jugadores li{
+    margin-top: 10px;
+}
+
+#seleccionados{
+    float: right;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#jugadores:hover{
+    cursor:pointer;
 }

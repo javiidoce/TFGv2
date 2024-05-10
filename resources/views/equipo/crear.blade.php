@@ -18,7 +18,7 @@
 
                     <div class="form-group">
                         <label for="dorsal">Dorsal:</label>
-                        <input type="number" class="form-control" id="dorsal" name="dorsal" required>
+                        <input type="number" class="form-control" id="dorsal" name="dorsal" required min="1">
                     </div>
 
                     <script>
@@ -49,7 +49,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="minutos">Añadir minutos:</label>
-                                <input type="number" class="form-control" id="minutos" name="minutos" required min="0">
+                                <input type="number" class="form-control" id="minutos" name="minutos" required min="0" value="0">
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="amarillas">Añadir amarillas:</label>
-                                <input type="number" class="form-control" id="amarillas" name="amarillas" required min="0">
+                                <input type="number" class="form-control" id="amarillas" name="amarillas" required min="0" value="0">
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="rojas">Añadir rojas:</label>
-                                <input type="number" class="form-control" id="rojas" name="rojas" required min="0">
+                                <input type="number" class="form-control" id="rojas" name="rojas" required min="0" value="0">
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="goles">Añadir goles:</label>
-                                <input type="number" class="form-control" id="goles" name="goles" required min="0">
+                                <input type="number" class="form-control" id="goles" name="goles" required min="0" value="0">
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="asistencias">Añadir asistencias:</label>
-                                <input type="number" class="form-control" id="asistencias" name="asistencias" required min="0">
+                                <input type="number" class="form-control" id="asistencias" name="asistencias" required min="0" value="0">
                             </div>
                         </div>
                     </div>

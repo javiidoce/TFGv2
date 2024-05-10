@@ -14,7 +14,7 @@ class PartidosTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('partidos')->insert([
-            'Rival' => 'Huesca',
+            'Rival' => 'Liverpool',
             'fecha_id' => 2,
         ]);
     }

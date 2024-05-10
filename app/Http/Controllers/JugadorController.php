@@ -32,8 +32,13 @@ class JugadorController extends Controller
 
     public function editar($id)
     {
-        $jugador = Jugador::findOrFail($id);
-        $dorsales = Jugador::pluck('dorsal')->toArray();
+        $jugador = Jugador::find($id);
+        $userId = Auth::id();
+
+        $equipo = Equipo::where('user_id', $userId)
+                     ->first();
+        $dorsales = Jugador::where('equipo_id', $equipo->id)
+        ->pluck('dorsal')->toArray();
         return view('equipo.editar', ['jugador' => $jugador, 'equipo_id' => $jugador->equipo_id, 'dorsales' => $dorsales]);
     }
 
@@ -66,7 +71,12 @@ class JugadorController extends Controller
     }
 
     public function crear(){
-        $dorsales = Jugador::pluck('dorsal')->toArray();
+        $userId = Auth::id();
+
+        $equipo = Equipo::where('user_id', $userId)
+                     ->first();
+        $dorsales = Jugador::where('equipo_id', $equipo->id)
+        ->pluck('dorsal')->toArray();
         return view('equipo.crear', ['dorsales' => $dorsales]);
     }
 

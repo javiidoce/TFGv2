@@ -26,3 +26,7 @@ Route::post('/partido', [App\Http\Controllers\FechasController::class, 'storePar
 
 Route::get('/entrenamiento', [App\Http\Controllers\FechasController::class, 'createEntrenamiento'])->name('entrenamiento.create');
 Route::post('/entrenamiento', [App\Http\Controllers\FechasController::class, 'storeEntrenamiento'])->name('entrenamiento.store');
+
+Route::get('/ejercicio/{id}', [App\Http\Controllers\FechasController::class, 'correo'])->name('correo');
+
+Route::get('/pizarra', [App\Http\Controllers\HomeController::class, 'pizarra'])->name('pizarra');

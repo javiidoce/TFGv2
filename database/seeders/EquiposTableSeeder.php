@@ -15,8 +15,8 @@ class EquiposTableSeeder extends Seeder
     {
         DB::table('equipos')->insert([
             'id' => 1,
-            'Nombre' => 'Real Zaragoza',
-            'Categoria' => 'Segunda división española',
+            'Nombre' => 'Manchester United',
+            'Categoria' => 'Premier League',
             'user_id' => 1,
         ]);
     }

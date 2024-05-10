@@ -21,7 +21,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     {{ config('app.name', 'CoachHub') }}
@@ -36,15 +36,21 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item ms-4">
-                            <a class="link-secondary link-offset-2 link-underline-opacity-0"
+                            <a class="link-nav"
                                 href="{{ route('equipo') }}">
                                 Plantilla
                             </a>
                         </li>
                         <li class="nav-item ms-4">
-                            <a class="link-secondary link-offset-2 link-underline-opacity-0"
+                            <a class="link-nav"
                                 href="{{ route('calendario') }}">
                                 Calendario
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="link-nav"
+                                href="{{ route('pizarra') }}">
+                                Pizarra
                             </a>
                         </li>
                     </ul>
@@ -75,7 +81,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar sesión') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -89,15 +95,13 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main id="main" class="py-4">
             @yield('content')
         </main>
     </div>
     @stack('scripts')
 </body>
-<footer id="footer" class="bg-dark text-white-50">
-    <div class="container text-center">
+<footer class="text-center">
         Javier Melendo Soler &copy; CoachHub
-    </div>
 </footer>
 </html>

@@ -33,7 +33,9 @@ class HomeController extends Controller
         $maximos_asistentes = [];
         $amarillas = [];
         $rojas = [];
-        $fechas = Fecha::all();
+        $jugadores = Jugador::where('equipo_id',$equipo->first()->id)->get();
+        $fechas = Fecha::where('equipo_id', $equipo->first()->id)
+                         ->get();
         $eventos = [];
         foreach($fechas as $fecha){
             if($fecha->Tipo==1){
@@ -74,6 +76,17 @@ class HomeController extends Controller
                 ->take(3)
                 ->get();
         }
-        return view('home', ['maximos_goleadores' => $maximos_goleadores, 'maximos_asistentes' => $maximos_asistentes, 'amarillas' => $amarillas, 'rojas' => $rojas,'equipo_id' => $primer_equipo_id, 'eventos' => $eventos]);
+        return view('home', ['maximos_goleadores' => $maximos_goleadores, 'maximos_asistentes' => $maximos_asistentes, 'amarillas' => $amarillas, 'rojas' => $rojas,'equipo_id' => $primer_equipo_id, 'eventos' => $eventos, 'jugadores' => $jugadores]);
+    }
+
+    public function pizarra(){
+        return view('pizarra');
+    }
+
+    public function formaciones(){
+        $user_id = Auth::id();
+        $equipo = Equipo::where('user_id','=', $user_id)->get();
+        $jugadores = Jugador::where('equipo_id',$equipo->first()->id)->get();
+        return view('formaciones', ['jugadores' => $jugadores]);
     }
 }

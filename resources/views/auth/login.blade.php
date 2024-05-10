@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+                    <div class="card-header text-center">{{ __('Login') }}</div>
 
                     <div class="card-body">
                         <img class="logo image-fluid rounded mx-auto d-block" src="{{ url('img/logo.jpeg') }}">
@@ -24,7 +24,7 @@
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
-                                            <strong>Ese correo electrónico no es válido.</strong>
+                                            <strong>El correo o la contraseña son erroneos. Por favor intentelo de nuevo</strong>
                                         </span>
                                     @enderror
                                 </div>

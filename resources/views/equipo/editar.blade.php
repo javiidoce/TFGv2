@@ -7,7 +7,7 @@
     <div class="container">
         <p style="float: right">Inicio > Plantilla > Jugador</p>
         <h1>Editar Jugador</h1>
-        <form action="{{ route('jugador.update', ['id' => $jugador->id]) }}" method="POST">
+        <form action="{{ route('jugador.update', ['id' => $jugador->id]) }}" method="POST" enctype="multipart/form-data">
             @method('PATCH')
             @csrf
             <div class="row">
@@ -54,13 +54,15 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="añadirMinutos">Añadir minutos:</label>
-                                <input type="number" class="form-control" id="añadirMinutos" name="añadirMinutos" min="0">
+                                <input type="number" class="form-control" id="añadirMinutos" name="añadirMinutos"
+                                    min="0">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="quitarMinutos">Quitar minutos:</label>
-                                <input type="number" class="form-control" id="quitarMinutos" name="quitarMinutos" min="0">
+                                <input type="number" class="form-control" id="quitarMinutos" name="quitarMinutos"
+                                    min="0" max="{{$jugador->Minutos}}">
                             </div>
                         </div>
                     </div>
@@ -68,13 +70,15 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="añadirAmarillas">Añadir amarillas:</label>
-                                <input type="number" class="form-control" id="añadirAmarillas" name="añadirAmarillas" min="0">
+                                <input type="number" class="form-control" id="añadirAmarillas" name="añadirAmarillas"
+                                    min="0">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="quitarAmarillas">Quitar amarillas:</label>
-                                <input type="number" class="form-control" id="quitarAmarillas" name="quitarAmarillas" min="0">
+                                <input type="number" class="form-control" id="quitarAmarillas" name="quitarAmarillas"
+                                    min="0" max="{{$jugador->Amarillas}}">
                             </div>
                         </div>
                     </div>
@@ -82,13 +86,15 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="añadirRojas">Añadir rojas:</label>
-                                <input type="number" class="form-control" id="añadirRojas" name="añadirRojas" min="0">
+                                <input type="number" class="form-control" id="añadirRojas" name="añadirRojas"
+                                    min="0">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="quitarRojas">Quitar rojas:</label>
-                                <input type="number" class="form-control" id="quitarRojas" name="quitarRojas" min="0">
+                                <input type="number" class="form-control" id="quitarRojas" name="quitarRojas"
+                                    min="0" max="{{$jugador->Rojas}}">
                             </div>
                         </div>
                     </div>
@@ -96,13 +102,15 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="añadirGoles">Añadir goles:</label>
-                                <input type="number" class="form-control" id="añadirGoles" name="añadirGoles" min="0">
+                                <input type="number" class="form-control" id="añadirGoles" name="añadirGoles"
+                                    min="0">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="quitarGoles">Quitar goles:</label>
-                                <input type="number" class="form-control" id="quitarGoles" name="quitarGoles" min="0">
+                                <input type="number" class="form-control" id="quitarGoles" name="quitarGoles"
+                                    min="0" max="{{$jugador->Goles}}">
                             </div>
                         </div>
                     </div>
@@ -110,14 +118,15 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="añadirAsistencias">Añadir asistencias:</label>
-                                <input type="number" class="form-control" id="añadirAsistencias" name="añadirAsistencias" min="0">
+                                <input type="number" class="form-control" id="añadirAsistencias"
+                                    name="añadirAsistencias" min="0">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="quitarAsistencias">Quitar asistencias:</label>
                                 <input type="number" class="form-control" id="quitarAsistencias"
-                                    name="quitarAsistencias" min="0">
+                                    name="quitarAsistencias" min="0" max="{{$jugador->Asistencias}}">
                             </div>
                         </div>
                     </div>
@@ -131,18 +140,16 @@
                     <div class="row">
                         <div class="col">
                             <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                            </form>
-                        </div>
-                        <div class="col">
-                            <form action = "{{route('jugador.delete', $jugador->id)}}" method="POST">
-                                @csrf
-                                @method("DELETE")
-                                <input type="submit" class="btn btn-primary" value="Borrar jugador">
-                            </form>
-                        </div>
-                    </div>
-
-
+        </form>
+    </div>
+    <div class="col">
+        <form action = "{{ route('jugador.delete', $jugador->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <input type="submit" class="btn btn-primary" value="Borrar jugador">
+        </form>
+    </div>
+    </div>
     </div>
     </div>
 

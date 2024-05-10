@@ -4,6 +4,7 @@
     Inicio
 @endsection
 @section('content')
+@if(count($jugadores)>10)
     <div class="container">
         <div class="row">
             <!-- Columna izquierda -->
@@ -47,7 +48,7 @@
 
             <!-- Columna central -->
             <div class="col-md-6">
-                <div id='calendar'></div>
+                <div id='calendar'></div><br><br><br><br><br>
             </div>
 
             <!-- Columna derecha -->
@@ -90,6 +91,13 @@
             </div>
         </div>
     </div>
+@else
+  <div class="container">
+    <p>
+        ¡Registro exitoso! <br><br>¡Bienvenido a nuestra aplicación! Antes de comenzar a disfrutar de todas las funciones, necesitas crear 11 jugadores para tu equipo. Dirígete al menú de plantilla y crealos, verás que es muy sencillo. Una vez que hayas creado tus jugadores, podrás acceder a todas las características de la aplicación y comenzar a usarla.<br><br>¡Gracias por unirte a nosotros y buena suerte en tus partidos!
+    </p>
+  </div>
+@endif
 @endsection
 @push('scripts')
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
@@ -115,3 +123,4 @@
 
   </script>
 @endpush
+

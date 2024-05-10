@@ -17,6 +17,7 @@
         <label for="rival">Rival:</label>
         <input type="text" class="form-control" id="rival" name="rival" required><br>
         <button type="submit" class="btn btn-primary">Crear partido</button>
+        <a class="btn btn-primary" href="{{route('calendario')}}">Volver</a>
         </form>
     </div>
 @endsection
