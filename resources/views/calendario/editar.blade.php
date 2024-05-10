@@ -232,7 +232,7 @@
                 });
 
                 let yPosition = height - 4 * fontSize;
-                var nombreEquipo = <?php echo json_encode($equipo->Nombre, JSON_HEX_TAG); ?>;
+                var nombreEquipo = <?php echo isset($equipo->Nombre) ? json_encode($equipo->Nombre, JSON_HEX_TAG) : json_encode(null, JSON_HEX_TAG);?>;
                 page.drawText(nombreEquipo, {
                     x: 50,
                     y: yPosition,
@@ -241,7 +241,8 @@
                     color: rgb(0, 0, 0),
                 });
                 yPosition -= fontSize * 2;
-                var categoria = <?php echo json_encode($equipo->Categoria, JSON_HEX_TAG); ?>;
+
+                var categoria = <?php echo isset($equipo->Categoria) ? json_encode($equipo->Categoria, JSON_HEX_TAG) : json_encode(null, JSON_HEX_TAG); ?>;
                 page.drawText(categoria, {
                     x: 50,
                     y: yPosition,
@@ -250,8 +251,8 @@
                     color: rgb(0, 0, 0),
                 });
                 yPosition -= fontSize * 2;
-                var fecha = <?php echo json_encode($fechaEsp, JSON_HEX_TAG); ?>;
-                var hora = <?php echo json_encode($fecha->Inicio, JSON_HEX_TAG) ?>;
+                var hora = <?php echo isset($fecha->Inicio) ? json_encode($fecha->Inicio, JSON_HEX_TAG) : json_encode(null, JSON_HEX_TAG); ?>;
+                var fecha = <?php echo isset($fechaEsp) ? json_encode($fechaEsp, JSON_HEX_TAG) : json_encode(null, JSON_HEX_TAG); ?>;
                 page.drawText(fecha+' '+hora, {
                     x: 50,
                     y: yPosition,
@@ -261,7 +262,7 @@
                 });
 
                 yPosition -= fontSize * 2;
-                var rival = <?php echo json_encode($partido->Rival, JSON_HEX_TAG) ?>;
+                var rival = <?php echo isset($partido->Rival) ? json_encode($partido->Rival, JSON_HEX_TAG) : json_encode(null, JSON_HEX_TAG);?>;
                 page.drawText('Rival:'+rival, {
                     x: 50,
                     y: yPosition,
@@ -407,5 +408,7 @@
             }
 
         }
+
+
     </script>
 @endpush
