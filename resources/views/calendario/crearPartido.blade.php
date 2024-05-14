@@ -5,6 +5,7 @@
 @endsection
 @section('content')
     <div class="container">
+        <h1>Crear partido</h1>
         <form action="{{ route('partido.store') }}" method="POST">
             @csrf
         <p style="float: right; margin-left: 10px">Inicio > Calendario > Partido</p>

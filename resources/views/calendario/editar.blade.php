@@ -212,8 +212,8 @@
 
                 const anchoImagen = 200;
                 const alturaImagen = 150;
-                const imageX = width - anchoImagen -50;
-                const imageY = height - alturaImagen -50;
+                const imageX = width - anchoImagen -100;
+                const imageY = height - alturaImagen -100;
 
                 //pongo la imagen en el pdf
                 page.drawImage(image, {
@@ -222,6 +222,20 @@
                     width: anchoImagen,
                     height: alturaImagen,
                 });
+
+                const logoUrl = 'https://i.imgur.com/zytr3dF.png';
+                const logoBytes = await fetch(logoUrl).then(res => res.arrayBuffer());
+                const logoImage = await pdfDoc.embedPng(logoBytes);
+
+                const logoAncho = 50;
+            const logoAlto = 50;
+            page.drawImage(logoImage, {
+                x: width - logoAncho - 10,
+                y: height - logoAlto - 10,
+                width: logoAncho,
+                height: logoAlto,
+            });
+
 
                 page.drawText(document.getElementById('seleccionarFormacion').value,{
                     x: imageX,

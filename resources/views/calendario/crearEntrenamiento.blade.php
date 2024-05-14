@@ -5,6 +5,7 @@
 @endsection
 @section('content')
     <div class="container">
+        <h1>Crear entrenamiento</h1>
         <p style="float: right; margin-left: 10px">Inicio > Calendario > Entrenamiento</p>
         <div class="row">
             <div class="col">
