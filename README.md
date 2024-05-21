@@ -21,6 +21,7 @@ Características principales:
 <img src="https://cdn.worldvectorlogo.com/logos/nodejs-2.svg" alt="nodejs" width="40" height="40"/> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/>
 <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="github" width="40" height="40"/>
+<img src="https://cdn.worldvectorlogo.com/logos/npm.svg" alt="npm" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/></p>
 
 ## Estado del proyecto 📝
