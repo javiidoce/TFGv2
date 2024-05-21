@@ -34,7 +34,7 @@ Si surge algún problema con la aplicación, me lo puedes comunicar en docejavii
 
 ## Autor
 
-<a href="https://github.com/javiidoce"> Javier Melendo <a/> <br>
+<a href="https://github.com/javiidoce" style="text-decoration:none; color:white;"> Javier Melendo <a/> <br>
 <img src="https://github.com/javiidoce/TFGv2/assets/116526601/3f997216-443d-49fe-b8f4-ed32a9c6044a" width="100" height="100">
 
 
