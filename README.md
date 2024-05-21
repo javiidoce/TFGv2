@@ -32,6 +32,12 @@ Terminando...
 
 Si surge algún problema con la aplicación, me lo puedes comunicar en docejavii@gmail.com.
 
+## Autor
+
+Javier Melendo
+![image](https://github.com/javiidoce/TFGv2/assets/116526601/3f997216-443d-49fe-b8f4-ed32a9c6044a)
+
+
 ## Licencia ⚡
 
 Copyright 2024 Javier Melendo Soler 
