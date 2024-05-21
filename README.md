@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/javiidoce/TFGv2" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
+![image](https://github.com/javiidoce/TFGv2/assets/116526601/94aae97b-05ee-47b8-9e4a-3e425c3a3e7e)<p align="center"><a href="https://github.com/javiidoce/TFGv2" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
 
 ## CoachHub
 
@@ -11,11 +11,11 @@ Características principales:
 - Calendario con partidos y entrenamientos.
 
 ## Tecnologías usadas
-<p align="left"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>  
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
+<p align="left"> <img src="https://cdn.worldvectorlogo.com/logos/git-bash.svg" alt="bash" width="40" height="40"/>  
+<img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="bootstrap" width="40" height="40"/> 
+<img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css3" width="40" height="40"/> 
+<img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="html5" width="40" height="40"/> 
+<img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="javascript" width="40" height="40"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="laravel" width="40" height="40"/> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
