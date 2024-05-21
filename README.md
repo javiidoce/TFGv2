@@ -1,4 +1,4 @@
-![image](https://github.com/javiidoce/TFGv2/assets/116526601/94aae97b-05ee-47b8-9e4a-3e425c3a3e7e)<p align="center"><a href="https://github.com/javiidoce/TFGv2" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://github.com/javiidoce/TFGv2" target="_blank"><img src="public/img/logo.jpeg" width="400" alt="Laravel Logo"></a></p>
 
 ## CoachHub
 
