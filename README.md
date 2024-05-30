@@ -26,7 +26,7 @@ Características principales:
 
 ## Estado del proyecto 📝
 
-Terminando...
+Terminado✅
 
 ## Contacto 💬 
 
